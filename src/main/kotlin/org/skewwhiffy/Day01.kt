@@ -35,6 +35,17 @@ In this example, the calibration values of these four lines are 12, 38, 15, and 
 Consider your entire calibration document. What is the sum of all of the calibration values?
  */
 
+fun solution(): Int {
+    val lines = Thread
+        .currentThread()
+        .contextClassLoader
+        .getResourceAsStream("Day01")
+        ?.bufferedReader()
+        ?.use { it.readLines() }
+        ?: emptyList()
+    return lines.map(::calculateCalibrationValue).sum()
+}
+
 fun calculateCalibrationValue(source: String): Int {
     val integers = source.filter { it.isDigit() }.map { it.digitToInt() }
     val firstInteger = integers.first()
