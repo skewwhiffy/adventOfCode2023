@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.skewwhiffy.Day01Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in org.skewwhiffy.Day01Test
+calculates calibration values  Time elapsed: 0.007 s  <<< ERROR!
+kotlin.NotImplementedError: An operation is not implemented.
+	at org.skewwhiffy.Day01Test.calculates calibration values(Day01Test.kt:11)
+
